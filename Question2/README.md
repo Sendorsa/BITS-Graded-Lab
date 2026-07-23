@@ -16,7 +16,7 @@ This solution implements a robust C system utility (`process_manager.c`) that:
 * [`process_manager.c`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question2/process_manager.c) - Fully commented C source code implementing process monitoring and signal management.
 * [`process_manager`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question2/process_manager) - Compiled C binary executable.
 * [`output.log`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question2/output.log) - Captured execution stdout/stderr log.
-* [`Screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question2/Screenshots) - Directory containing visual process management screenshots.
+* [`screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question2/screenshots) - Directory containing visual process management screenshots.
 
 ---
 

@@ -22,31 +22,31 @@ BITS-Graded-Lab/
 │   ├── report.txt                     (Generated audit report)
 │   ├── error.log                      (Generated error log)
 │   ├── output.log                     (Captured terminal output)
-│   └── Screenshots/                   (Captured terminal screenshots)
+│   └── screenshots/                   (Captured terminal screenshots)
 ├── Question2/
 │   ├── README.md                      (Process Manager Writeup & POSIX Explanations)
 │   ├── process_manager.c              (Commented C source code)
 │   ├── process_manager                (Compiled binary executable)
 │   ├── output.log                     (Captured terminal execution log)
-│   └── Screenshots/                   (Captured terminal screenshots)
+│   └── screenshots/                   (Captured terminal screenshots)
 ├── Question3/
 │   ├── README.md                      (Low-Level System Calls Writeup & Efficiency Analysis)
 │   ├── employee_manager.c             (C source code using open/read/write/lseek/close)
 │   ├── employee_manager               (Compiled binary executable)
 │   ├── employees.db                   (Generated binary database file - 360 bytes)
 │   ├── output.log                     (Captured terminal execution log)
-│   └── Screenshots/                   (Captured terminal screenshots)
+│   └── screenshots/                   (Captured terminal screenshots)
 ├── Question4/
 │   ├── README.md                      (Command Pipeline Writeup & Latency Analysis)
 │   ├── app.log                        (Sample application log file)
 │   ├── monitor_logs.sh                (Pipeline execution test harness)
 │   ├── error_report.log               (Generated filtered ERROR log)
 │   ├── output.log                     (Captured terminal execution log)
-│   └── Screenshots/                   (Captured terminal screenshots)
+│   └── screenshots/                   (Captured terminal screenshots)
 └── Question5/
     ├── README.md                      (Structured Technical Evaluation of Vi Recovery)
     ├── output.log                     (Captured terminal recovery log)
-    └── Screenshots/                   (Captured terminal screenshots)
+    └── screenshots/                   (Captured terminal screenshots)
 ```
 
 ---

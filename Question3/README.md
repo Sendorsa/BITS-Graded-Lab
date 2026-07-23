@@ -12,7 +12,7 @@ Higher-level C standard library I/O functions (`fopen()`, `fread()`, `fwrite()`)
 * [`employee_manager`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question3/employee_manager) - Compiled binary executable.
 * [`employees.db`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question3/employees.db) - Binary employee database storage file (360 bytes).
 * [`output.log`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question3/output.log) - Captured execution stdout/stderr log.
-* [`Screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question3/Screenshots) - Directory containing visual system call database screenshots.
+* [`screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question3/screenshots) - Directory containing visual system call database screenshots.
 
 ---
 

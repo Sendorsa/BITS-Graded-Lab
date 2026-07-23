@@ -20,7 +20,7 @@ This solution provides a robust Shell script (`submission_dedupe.sh`) that:
 * [`report.txt`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question1/report.txt) - Generated audit report file.
 * [`error.log`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question1/error.log) - Separate error output log.
 * [`output.log`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question1/output.log) - Terminal stdout/stderr capture log.
-* [`Screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question1/Screenshots) - Directory containing visual execution screenshots.
+* [`screenshots/`](file:///Users/athish/%5B2%5D%20Bits/%5B1%5D%20Command%20Line%20Interface%20SGA%20submmison/BITS-Graded-Lab/Question1/screenshots) - Directory containing visual execution screenshots.
 
 ---
 
