@@ -1,0 +1,5 @@
+[2026-07-23 10:00:15] [ERROR] [PaymentGateway] Timeout connecting to payment gateway api.stripe.com:443 after 5000ms
+[2026-07-23 10:00:22] [ERROR] [Database] Failed to acquire lock on table 'orders' - Transaction aborted due to deadlock
+[2026-07-23 10:00:30] [ERROR] [AuthService] Invalid OAuth token signature from client IP 203.0.113.42
+[2026-07-23 10:00:45] [ERROR] [StorageService] Permission denied writing to /mnt/backup/daily_20260723.tar.gz
+[2026-07-23 10:01:10] [ERROR] [Database] Failed to execute SQL query: Deadlock detected on record #9402

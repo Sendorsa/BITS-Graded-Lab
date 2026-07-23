@@ -1,0 +1,44 @@
+=================================================================
+     Web Server Process Manager & Zombie Prevention Subsystem    
+=================================================================
+[PARENT] Parent Process ID (PID): 10343
+[PARENT] Spawning 5 worker child processes...
+
+[PARENT] Forked Child 0 with PID: 10347
+  [CHILD 0] PID: 10347 (Parent: 10343) -> Working (simulating 1 sec task)...
+[PARENT] Forked Child 1 with PID: 10348
+  [CHILD 1] PID: 10348 (Parent: 10343) -> Working (simulating 2 sec task)...
+[PARENT] Forked Child 2 with PID: 10349
+  [CHILD 2] PID: 10349 (Parent: 10343) -> Working (simulating 3 sec task)...
+[PARENT] Forked Child 3 with PID: 10350
+  [CHILD 3] PID: 10350 (Parent: 10343) -> Simulated HUNG worker process (infinite loop)...
+[PARENT] Forked Child 4 with PID: 10351
+
+[PARENT] Monitoring child processes (Timeout threshold: 3 seconds)...
+
+  [CHILD 4] PID: 10351 (Parent: 10343) -> Simulating fast error exit (code 42)
+  [CHILD 0] PID: 10347 -> Task complete. Exiting cleanly (code 0).
+[PARENT MONITOR] Child 0 (PID 10347) exited normally with status 0.
+[PARENT MONITOR] Child 4 (PID 10351) exited normally with status 42.
+  [CHILD 1] PID: 10348 -> Task complete. Exiting cleanly (code 0).
+[PARENT MONITOR] Child 1 (PID 10348) exited normally with status 0.
+
+=================================================================
+        Timeout Reached (3 sec). Checking Unresponsive Children 
+=================================================================
+[WATCHDOG] Child 2 (PID 10349) is UNRESPONSIVE. Sending SIGTERM...
+[WATCHDOG] Child 2 (PID 10349) successfully reaped after termination signal 15 (Terminated: 15).
+[WATCHDOG] Child 3 (PID 10350) is UNRESPONSIVE. Sending SIGTERM...
+[WATCHDOG] Child 3 (PID 10350) successfully reaped after termination signal 15 (Terminated: 15).
+
+=================================================================
+                   PROCESS MANAGER REPORT SUMMARY                
+=================================================================
+ Child 0 | PID: 10347  | Status: TERMINATED | Exit Code: 0
+ Child 1 | PID: 10348  | Status: TERMINATED | Exit Code: 0
+ Child 2 | PID: 10349  | Status: TERMINATED | Killed by Signal 15 (Terminated: 15)
+ Child 3 | PID: 10350  | Status: TERMINATED | Killed by Signal 15 (Terminated: 15)
+ Child 4 | PID: 10351  | Status: TERMINATED | Exit Code: 42
+-----------------------------------------------------------------
+[STATUS] All child processes reaped. Zero zombie processes remaining.
+=================================================================

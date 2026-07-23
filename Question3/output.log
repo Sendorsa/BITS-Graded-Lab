@@ -1,0 +1,48 @@
+================================================================================
+       POSIX Low-Level System Call Employee Management Subsystem               
+================================================================================
+[INIT] Creating/Opening database file 'employees.db' via open() system call...
+
+--- PHASE 1: Inserting Employee Records (System Call: write & lseek) ---
+[INSERT] [ID: 101] Name: Alice Smith      | Dept: Engineering  | Salary: $95000.00 | Active: YES
+[INSERT] [ID: 102] Name: Bob Jones        | Dept: Finance      | Salary: $82000.00 | Active: YES
+[INSERT] [ID: 103] Name: Carol Williams   | Dept: Marketing    | Salary: $78000.00 | Active: YES
+[INSERT] [ID: 104] Name: David Brown      | Dept: Engineering  | Salary: $105000.00 | Active: YES
+[INSERT] [ID: 105] Name: Eve Davis        | Dept: HR           | Salary: $71000.00 | Active: YES
+
+--------------------------------------------------------------------------------
+                     FULL DATABASE DUMP (Sequential Scan)                       
+--------------------------------------------------------------------------------
+[REC #0] [ID: 101] Name: Alice Smith      | Dept: Engineering  | Salary: $95000.00 | Active: YES
+[REC #1] [ID: 102] Name: Bob Jones        | Dept: Finance      | Salary: $82000.00 | Active: YES
+[REC #2] [ID: 103] Name: Carol Williams   | Dept: Marketing    | Salary: $78000.00 | Active: YES
+[REC #3] [ID: 104] Name: David Brown      | Dept: Engineering  | Salary: $105000.00 | Active: YES
+[REC #4] [ID: 105] Name: Eve Davis        | Dept: HR           | Salary: $71000.00 | Active: YES
+--------------------------------------------------------------------------------
+
+--- PHASE 2: Random Access Retrieval (System Call: lseek & read) ---
+[QUERY] Requesting Record #2 directly via lseek(fd, 2 * sizeof(Employee), SEEK_SET)...
+[FETCHED] [ID: 103] Name: Carol Williams   | Dept: Marketing    | Salary: $78000.00 | Active: YES
+[QUERY] Requesting Record #0 directly via lseek(fd, 0 * sizeof(Employee), SEEK_SET)...
+[FETCHED] [ID: 101] Name: Alice Smith      | Dept: Engineering  | Salary: $95000.00 | Active: YES
+
+--- PHASE 3: In-Place Direct Record Modification (System Call: lseek, read, write) ---
+[UPDATE] Modifying Salary for Bob Jones (Record #1) to $89,500.00 in-place...
+[MODIFY] Record #1 (ID: 102, Bob Jones) Salary Updated: $82000.00 -> $89500.00
+[UPDATE] Modifying Salary for Alice Smith (Record #0) to $102,000.00 in-place...
+[MODIFY] Record #0 (ID: 101, Alice Smith) Salary Updated: $95000.00 -> $102000.00
+
+--------------------------------------------------------------------------------
+                     FULL DATABASE DUMP (Sequential Scan)                       
+--------------------------------------------------------------------------------
+[REC #0] [ID: 101] Name: Alice Smith      | Dept: Engineering  | Salary: $102000.00 | Active: YES
+[REC #1] [ID: 102] Name: Bob Jones        | Dept: Finance      | Salary: $89500.00 | Active: YES
+[REC #2] [ID: 103] Name: Carol Williams   | Dept: Marketing    | Salary: $78000.00 | Active: YES
+[REC #3] [ID: 104] Name: David Brown      | Dept: Engineering  | Salary: $105000.00 | Active: YES
+[REC #4] [ID: 105] Name: Eve Davis        | Dept: HR           | Salary: $71000.00 | Active: YES
+--------------------------------------------------------------------------------
+
+[CLEANUP] Closing database file descriptor via close() system call...
+================================================================================
+[STATUS] Execution clean. All file operations completed using POSIX system calls.
+================================================================================

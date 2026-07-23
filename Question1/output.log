@@ -1,0 +1,37 @@
+==================================================
+ Starting Assignment Submission Deduplication
+ Source Directory : sample_submissions
+ Backup Directory : backup
+ Report File      : report.txt
+ Error Log        : error.log
+==================================================
+
+[BACKUP]    sample_submissions/student_101_assignment1.c -> backup/student_101_assignment1.c
+[DUPLICATE] sample_submissions/student_102_assignment1.c matches hash of sample_submissions/student_101_assignment1.c
+[BACKUP]    sample_submissions/student_103_assignment1.c -> backup/student_103_assignment1.c
+[DUPLICATE] sample_submissions/student_104_assignment1.c matches hash of sample_submissions/student_101_assignment1.c
+[BACKUP]    sample_submissions/student_105_module5.py -> backup/student_105_module5.py
+[DUPLICATE] sample_submissions/student_106_module5.py matches hash of sample_submissions/student_105_module5.py
+==================================================
+       SUBMISSION DEDUPLICATION REPORT            
+==================================================
+Timestamp           : 2026-07-23 13:07:20
+Source Directory    : sample_submissions
+Backup Directory    : backup
+Total Files Scanned : 6
+Backed-Up (Unique)  : 3
+Duplicate Files     : 3
+--------------------------------------------------
+BACKED UP UNIQUE FILES:
+  - sample_submissions/student_101_assignment1.c -> backup/student_101_assignment1.c
+  - sample_submissions/student_103_assignment1.c -> backup/student_103_assignment1.c
+  - sample_submissions/student_105_module5.py -> backup/student_105_module5.py
+--------------------------------------------------
+IDENTIFIED DUPLICATE FILES:
+  - sample_submissions/student_102_assignment1.c (Duplicate of sample_submissions/student_101_assignment1.c)
+  - sample_submissions/student_104_assignment1.c (Duplicate of sample_submissions/student_101_assignment1.c)
+  - sample_submissions/student_106_module5.py (Duplicate of sample_submissions/student_105_module5.py)
+==================================================
+
+Deduplication complete. Report saved to report.txt.
+Errors (if any) saved to error.log.
