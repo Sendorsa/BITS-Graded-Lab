@@ -1,4 +1,4 @@
-# BITS Graded Lab Assignment (Modules 5–10)
+# BITS Graded Lab Assignment
 **Course / Lab Submission Repository**  
 **Author**: Technical Documentation & Linux Systems Engineering  
 **Environment**: macOS / Linux POSIX Shell & C11 Toolchain
